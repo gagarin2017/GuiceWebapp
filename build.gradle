@@ -1,0 +1,18 @@
+plugins {
+    id 'war'
+    id 'org.gretty' version '3.0.1'
+    id 'eclipse'
+    id 'eclipse-wtp'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0' 
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:2.7.19'
+    compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
+    compile group: 'com.google.inject.extensions', name: 'guice-servlet', version: '4.2.2'
+}
